@@ -11,6 +11,7 @@ message() {
 }
 
 message "Bundle-ing"
+env PATH=$PATH gem install bundler
 env PATH=$PATH bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment | indent
 
 message "Compiling Octopress site"
