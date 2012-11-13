@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bin/detect <build-dir>
+
+echo "Nihilist und Christ: das reimt sich, das reimt sich nicht bloss."
+exit 0
