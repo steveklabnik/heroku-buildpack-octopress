@@ -1,3 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-echo "DEPLOY OMG WHAT A DEVOPS TRIUMPH"
+cat << EOF
+---
+addons:
+config_vars:
+default_process_types:
+  web: bin/puma -p \$PORT
+EOF
